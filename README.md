@@ -4,5 +4,6 @@
 
   * the headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.
   * the Arduino software which reads CSV commands and writes RDF data on a solid pod.
-  * links to hardware used
+  * descriptions and links related to hardware (pumps, sensors, etc)
+
 
