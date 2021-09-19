@@ -14,6 +14,7 @@
   * Power Transistor RFP30N06LE MOSFET 30A 60V N-Channel: https://www.amazon.com/gp/product/B07WR86ZGS/
   * Polyethylene Tubing 1/2" OD x 3/8" ID x 25': https://www.menards.com/main/plumbing/hoses-tubing/polyethylene-tubing/sioux-chief-1-2-od-x-3-8-id-polyethylene-tubing/901-03163w0025m/p-1470660864120-c-8581.htm
 
+The links refer to the particular sources and products I used but there are many other options and vendors for most of these products.
 
 For more information on moisture sensors see:  https://flashgamer.com/blog/comments/testing-capacitive-soil-moisture-sensors
 
