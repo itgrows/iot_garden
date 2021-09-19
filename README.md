@@ -28,9 +28,9 @@ Voltage reporting - this could be done with a simple resistor circuit and one of
   * Battery Negative Terminal - Arduino Negative via barrel connector
 
   * Battery Positive Terminal - Pump Positive (red line)
-  * Pump Negative (yellow line) - Transistor Drain (center pin)
-  * Transistor Source (pin on viewers right side facing transistor labeled side) - Battery Negative Terminal
-  * Transistor Gate (pin on viewers left side facing transistor labeled side) - Arduino Digital Pin 12
+  * Pump Negative (yellow line) - Transistor Drain 
+  * Transistor Source - Battery Negative Terminal
+  * Transistor Gate - Arduino Digital Pin 12
 
   * Moisture Sensor 5V - Arduino 5V pin
   * Moisture Sensor Gnd - Arduino Gnd pin
@@ -38,6 +38,7 @@ Voltage reporting - this could be done with a simple resistor circuit and one of
   * Moisture Sensor ICL - Arduino ICL
 
 Arduino barrel connector is 2.1mm ID, 5.5mm OD.
+Transistor datasheet: https://cdn.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
 
 
 
