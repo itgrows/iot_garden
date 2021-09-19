@@ -15,11 +15,11 @@
   * Polyethylene Tubing 1/2" OD x 3/8" ID x 25': https://www.menards.com/main/plumbing/hoses-tubing/polyethylene-tubing/sioux-chief-1-2-od-x-3-8-id-polyethylene-tubing/901-03163w0025m/p-1470660864120-c-8581.htm
 
 
-#### For more information on moisture sensors see:  https://flashgamer.com/blog/comments/testing-capacitive-soil-moisture-sensors
+For more information on moisture sensors see:  https://flashgamer.com/blog/comments/testing-capacitive-soil-moisture-sensors
 
-#### The battery I used was a bit underpowered for the task.  A few half hour sessions of pump operation significantly drained the battery.  The arduino still had enough voltage to operate even when the pump could not.  In the future I will add a larger capacity 12V battery and provide battery voltage reporting.
+The battery I used was a bit underpowered for the task.  A few half hour sessions of pump operation significantly drained the battery.  The arduino still had enough voltage to operate even when the pump could not.  In the future I will add a larger capacity 12V battery and provide battery voltage reporting.
 
-#### Voltage reporting - this could be done with a simple resistor circuit and one of the A/D pins on the arduino.  For example, a large resistor (e.g. 2M Ohm) in serial with one half that size (e.g. 1M Ohm) could span the 12V battery output to the ground.  This would create a point between the 2 resistors which would measure 1/3 of the voltage.  This would provide a proxy for the 12V-0V in a range suitable to be read by the 5V Analog to Digital pin (4V-0V).  The digital value of that pin could be added to the RDF reported to the solid pod.  (Note that the '12V' battery can often output a little more than 12V so 1/3 measurement is safer than trying to have 12V result in a 5V pin input.)
+Voltage reporting - this could be done with a simple resistor circuit and one of the A/D pins on the arduino.  For example, a large resistor (e.g. 2M Ohm) in serial with one half that size (e.g. 1M Ohm) could span the 12V battery output to the ground.  This would create a point between the 2 resistors which would measure 1/3 of the voltage.  This would provide a proxy for the 12V-0V in a range suitable to be read by the 5V Analog to Digital pin (4V-0V).  The digital value of that pin could be added to the RDF reported to the solid pod.  (Note that the '12V' battery can often output a little more than 12V so 1/3 measurement is safer than trying to have 12V result in a 5V pin input.)
 
 
 
