@@ -23,4 +23,21 @@ The battery I used was a bit underpowered for the task.  A few half hour session
 Voltage reporting - this could be done with a simple resistor circuit and one of the A/D pins on the arduino.  For example, a large resistor (e.g. 2M Ohm) in serial with one half that size (e.g. 1M Ohm) could span the 12V battery output to the ground.  This would create a point between the 2 resistors which would measure 1/3 of the voltage.  This would provide a proxy for the 12V-0V in a range suitable to be read by the 5V Analog to Digital pin (4V-0V).  The digital value of that pin could be added to the RDF reported to the solid pod.  (Note that the '12V' battery can often output a little more than 12V so 1/3 measurement is safer than trying to have 12V result in a 5V pin input.)
 
 
+### Connections:
+  * Battery Positive Terminal - Arduino Positive via barrel connector
+  * Battery Negative Terminal - Arduino Negative via barrel connector
+
+  * Battery Positive Terminal - Pump Positive (red line)
+  * Pump Negative (yellow line) - Transistor Drain (center pin)
+  * Transistor Source (pin on viewers right side facing transistor labeled side) - Battery Negative Terminal
+  * Transistor Gate (pin on viewers left side facing transistor labeled side) - Arduino Digital Pin 12
+
+  * Moisture Sensor 5V - Arduino 5V pin
+  * Moisture Sensor Gnd - Arduino Gnd pin
+  * Moisture Sensor SDA - Arduino SDA
+  * Moisture Sensor ICL - Arduino ICL
+
+Arduino barrel connector is 2.1mm ID, 5.5mm OD.
+
+
 
