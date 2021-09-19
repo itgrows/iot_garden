@@ -37,8 +37,9 @@ Voltage reporting - this could be done with a simple resistor circuit and one of
   * Moisture Sensor SDA - Arduino SDA
   * Moisture Sensor ICL - Arduino ICL
 
-Arduino barrel connector is 2.1mm ID, 5.5mm OD.
-Transistor datasheet: https://cdn.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
+### Notes:
+  * Arduino barrel connector is 2.1mm ID, 5.5mm OD.
+  * Transistor datasheet: https://cdn.sparkfun.com/datasheets/Components/General/RFP30N06LE.pdf
 
 
 
