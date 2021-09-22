@@ -3,7 +3,7 @@
 
 This is an Internet of Things garden watering project which uses a Solid Pod as a time series data repository and a store for relaying operational commands.  An Arduino posts soil moisture and other data to a Solid Pod and retrieves its new commands and threshold levels for the control of a water pump.  A Python client is used to set Arduino bound commands in CSV and provide graphical representation of the incoming RDF sensor data.  The graph displays soil moisture, soil temperature, pump operation, and wifi signal strength over time.  This design can serve as a base for future automation.
 
-This project was presented to https://solidproject.org on Sept 2nd.  The video can be seen at: https://vimeo.com/596683888
+This project was presented to https://solidproject.org on Sept 2nd.  The recording is at: https://vimeo.com/596683888
 
 ### After a bit of cleanup and documentation this repository will contain:
   * the headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.
