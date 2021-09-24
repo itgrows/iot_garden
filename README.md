@@ -1,15 +1,23 @@
 
-## This repository will soon host the software for the Gardening with Arduino project.
+## This repository contains instructions and software for the Gardening with Arduino project.
 
 This is an Internet of Things garden watering project which uses a Solid Pod as a time series data repository and a store for relaying operational commands.  An Arduino posts soil moisture and other data to a Solid Pod and retrieves its new commands and threshold levels for the control of a water pump.  A Python client is used to set Arduino bound commands in CSV and provide graphical representation of the incoming RDF sensor data.  The graph displays soil moisture, soil temperature, pump operation, and wifi signal strength over time.  This design can serve as a base for future automation.
 
 This project was presented to https://solidproject.org on Sept 2nd.  The recording is at: https://vimeo.com/596683888
 
-### After a bit of cleanup and documentation this repository will contain:
-  * the headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.
-  * the Arduino software which reads CSV commands and writes RDF data on a solid pod.
+
+### Arduino Software
+  The arduino_solid project contains the code used by the Arduino to read CSV commands from the solid pod and write RDF data to a different file on the solid pod.  This is written for the Arduino WiFi Rev 2.  Libraries for WiFi and moisture sensors will need to be added.
 
 
+### Client
+This is a headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.  For now it is manually run as this is a work in progress.  See comments in code.
+
+### Next
+Some things I hope to do next include:
+  * Run a dedicated Solid Pod using the new (Community Solid Server)[https://github.com/solid/community-server].
+  * Use Linked Data Notification to drive client side processing.
+  * Concatenate data from multiple day oriented files.
 
 ### Hardware used:
   * Arduino Uno WiFi Rev2 https://store-usa.arduino.cc/products/arduino-uno-wifi-rev2
