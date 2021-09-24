@@ -1,5 +1,5 @@
 
-## This repository contains instructions and software for the Gardening with Arduino project.
+## Gardening with Arduino
 
 This is an Internet of Things garden watering project which uses a Solid Pod as a time series data repository and a store for relaying operational commands.  An Arduino posts soil moisture and other data to a Solid Pod and retrieves its new commands and threshold levels for the control of a water pump.  A Python client is used to set Arduino bound commands in CSV and provide graphical representation of the incoming RDF sensor data.  The graph displays soil moisture, soil temperature, pump operation, and wifi signal strength over time.  This design can serve as a base for future automation.
 
@@ -7,17 +7,19 @@ This project was presented to https://solidproject.org on Sept 2nd.  The recordi
 
 
 ### Arduino Software
-  The arduino_solid project contains the code used by the Arduino to read CSV commands from the solid pod and write RDF data to a different file on the solid pod.  This is written for the Arduino WiFi Rev 2.  Libraries for WiFi and moisture sensors will need to be added.
+  The arduino_solid project contains the code used by the Arduino to read CSV commands from the solid pod and write RDF data to a different file on the solid pod.  This is written for the Arduino WiFi Rev 2.  Libraries for WiFi and moisture sensors will need to be added. Set solid pod credentials in the arduino_secrets.h file.
 
 
 ### Client
-This is a headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.  For now it is manually run as this is a work in progress.  See comments in code.
+This is a headless (without UI) python3 client which writes commands and reads RDF data on a solid pod.  For now it is manually run as this is a work in progress.  See comments in code.  Set solid pod signin info in a credentials.yaml file based on the _example file.
+
 
 ### Next
 Some things I hope to do next include:
-  * Run a dedicated Solid Pod using the new (Community Solid Server)[https://github.com/solid/community-server].
+  * Run a dedicated Solid Pod using the new Community Solid Server from https://github.com/solid/community-server .
   * Use Linked Data Notification to drive client side processing.
   * Concatenate data from multiple day oriented files.
+
 
 ### Hardware used:
   * Arduino Uno WiFi Rev2 https://store-usa.arduino.cc/products/arduino-uno-wifi-rev2
@@ -49,6 +51,7 @@ Voltage reporting - this could be done with a simple resistor circuit and one of
   * Moisture Sensor Gnd - Arduino Gnd pin
   * Moisture Sensor SDA - Arduino SDA
   * Moisture Sensor ICL - Arduino ICL
+
 
 ### Notes:
   * Arduino barrel connector is 2.1mm ID, 5.5mm OD.
